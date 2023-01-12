@@ -1,0 +1,1166 @@
+{
+	"info": {
+		"_postman_id": "6314bd28-8618-4b87-b087-f4ccc761e6ca",
+		"name": "Ensa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8985316"
+	},
+	"item": [
+		{
+			"name": "microservices",
+			"item": [
+				{
+					"name": "identityServer-microservice",
+					"item": [
+						{
+							"name": "ClaimsType",
+							"item": [
+								{
+									"name": "getAllClaimsType",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/claimsType/getAllClaimsType",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claimsType",
+												"getAllClaimsType"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "InsertClaimType",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claimsType/insertClaimType",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claimsType",
+												"insertClaimType"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateClaimType",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claimsType/updateClaimType",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claimsType",
+												"updateClaimType"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteClaimType",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claimsType/deleteClaimType?uid=41a250ca-1daa-4932-85e4-87f66456219b",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claimsType",
+												"deleteClaimType"
+											],
+											"query": [
+												{
+													"key": "uid",
+													"value": "41a250ca-1daa-4932-85e4-87f66456219b"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteAllClaimsType",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claimsType/deleteAllClaimsType",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claimsType",
+												"deleteAllClaimsType"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Roles",
+							"item": [
+								{
+									"name": "getAllRoles",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/roles/getAllRoles",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"getAllRoles"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "getRoleById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/roles/getRoleByRoleId?roleId=e558ed45-bcea-4c77-9531-eb1260504359",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"getRoleByRoleId"
+											],
+											"query": [
+												{
+													"key": "roleId",
+													"value": "e558ed45-bcea-4c77-9531-eb1260504359"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "getRoleByName",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/roles/getRoleByRoleName?roleName=full_access",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"getRoleByRoleName"
+											],
+											"query": [
+												{
+													"key": "roleName",
+													"value": "full_access"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertRole",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"roleName\":\"update_only\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/roles/insertRole",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"insertRole"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateRole",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"3375be1e-9a6b-4bdc-9593-a7086151fc78\",\r\n    \"roleName\":\"create_update_only\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/roles/updateRole",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"updateRole"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteRole",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/roles/deleteRole?uid=e5be0144-0c2b-4082-bdce-3b82961c1c84",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"deleteRole"
+											],
+											"query": [
+												{
+													"key": "uid",
+													"value": "e5be0144-0c2b-4082-bdce-3b82961c1c84"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteAllRoles",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/roles/deleteAllRoles",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"deleteAllRoles"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Permissions",
+							"item": [
+								{
+									"name": "getAllPermissions",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/permissions/getPermissionsByRoleId?roleId=685a058b-bb0c-4fe1-a377-6616d7e7404f",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"permissions",
+												"getPermissionsByRoleId"
+											],
+											"query": [
+												{
+													"key": "roleId",
+													"value": "685a058b-bb0c-4fe1-a377-6616d7e7404f"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertPermission",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"roleId\":\"685a058b-bb0c-4fe1-a377-6616d7e7404f\",\r\n    \"permissionId\":\"000003\",\r\n    \"serviceName\":\"delete_billing\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/permissions/insertPermission",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"permissions",
+												"insertPermission"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updatePermission",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"roleId\":\"\",\r\n    \"permissionId\":\"\",\r\n    \"serviceName\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/roles/updatePermission",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"roles",
+												"updatePermission"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deletePermission",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/permissions/deletePermission?uid=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"permissions",
+												"deletePermission"
+											],
+											"query": [
+												{
+													"key": "uid",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteAllPermissions",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/permissions/deleteAllPermissions",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"permissions",
+												"deleteAllPermissions"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Claims",
+							"item": [
+								{
+									"name": "getClaimsByUserId",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/claims/getClaimsByUserId?userId=40b05d1f-93f3-493c-a96c-1494bf9e3812",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claims",
+												"getClaimsByUserId"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "40b05d1f-93f3-493c-a96c-1494bf9e3812"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "getAllClaims",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/claims/getAllClaims",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claims",
+												"getAllClaims"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "InsertClaim",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claims/insertClaim",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claims",
+												"insertClaim"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateClaim",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claims/updateClaim",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claims",
+												"updateClaim"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteClaim",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"name\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claims/deleteClaim?uid=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claims",
+												"deleteClaim"
+											],
+											"query": [
+												{
+													"key": "uid",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteAllClaims",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/claims/deleteAllClaims",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"claims",
+												"deleteAllClaims"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Account",
+							"item": [
+								{
+									"name": "Registration",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"firstName\":\"Reda\",\r\n    \"lastName\":\"Abouzid\",\r\n    \"phonenumber\":\"0673955727\",\r\n    \"userName\":\"r.abouzid@gmail.com\",\r\n    \"validationKey\":\"cat\",\r\n    \"password\":\"@@dmin@123\",\r\n    \"roleId\":\"e558ed45-bcea-4c77-9531-eb1260504359\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/account/registration",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"account",
+												"registration"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "userProfile",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"firstName\":\"Reda\",\r\n    \"lastName\":\"Abouzid\",\r\n    \"phonenumber\":\"0673955727\",\r\n    \"userName\":\"reda.abouzid.dev@gmail.com\",\r\n    \"validationKey\":\"cat\",\r\n    \"password\":\"@@dmin@123\",\r\n    \"roleId\":\"e558ed45-bcea-4c77-9531-eb1260504359\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/account/userProfile?username=r.abouzid@gmail.com",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"account",
+												"userProfile"
+											],
+											"query": [
+												{
+													"key": "username",
+													"value": "r.abouzid@gmail.com"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DeleteUserByUserName",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/account/deleteUser?username=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"account",
+												"deleteUser"
+											],
+											"query": [
+												{
+													"key": "username",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DeleteAllUsers",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/account/deleteAllUsers",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"account",
+												"deleteAllUsers"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "GlobalConfiguration",
+							"item": [
+								{
+									"name": "getAllConfigurations",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/config/getAllConfigurations",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"config",
+												"getAllConfigurations"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "getConfigByKey",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/config/getConfigByKey?key=ENABLE_JWT_TOKEN_REFRESH",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"config",
+												"getConfigByKey"
+											],
+											"query": [
+												{
+													"key": "key",
+													"value": "ENABLE_JWT_TOKEN_REFRESH"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "insertConfig",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"\",\r\n    \"configurationKey\":\"ENABLE_JWT_TOKEN_REFRESH\",\r\n    \"configurationValue\":\"false\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/config/insertConfig",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"config",
+												"insertConfig"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateConfig",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "reda",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"uid\":\"74beb007-aeba-48d8-aed0-39f70742254a\",\r\n    \"configurationKey\":\"ENABLE_JWT_TOKEN_REFRESH\",\r\n    \"configurationValue\":\"true\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/config/updateConfig",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"config",
+												"updateConfig"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteAllConfig",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/config/deleteAllConfig",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"config",
+												"deleteAllConfig"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "deleteConfig",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/config/deleteConfig?uid=c5b2f7b0-0f61-4873-b70d-1f0b0a74be92",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"config",
+												"deleteConfig"
+											],
+											"query": [
+												{
+													"key": "uid",
+													"value": "c5b2f7b0-0f61-4873-b70d-1f0b0a74be92"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "authenticate",
+							"item": [
+								{
+									"name": "login",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"username\" : \"r.abouzid@gmail.com\",\r\n    \"password\" : \"@@dmin@123\" \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/auth/login",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"auth",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "logout",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJ2YWxpZGF0aW9uX2tleSI6ImNhdCIsInJvbGVfbmFtZSI6ImZ1bGxfYWNjZXNzIiwic3ViIjoici5hYm91emlkQGdtYWlsLmNvbSIsInJvbGVfaWQiOiJlNTU4ZWQ0NS1iY2VhLTRjNzctOTUzMS1lYjEyNjA1MDQzNTkiLCJ1c2VyX25hbWUiOiJyLmFib3V6aWRAZ21haWwuY29tIiwibGFzdF9uYW1lIjoiQWJvdXppZCIsInBob25lX251bWJlciI6IjA2NzM5NTU3MjciLCJleHAiOjE2NzM0OTUxMTIsImZpcnN0X25hbWUiOiJSZWRhIiwiaWF0IjoxNjczNDg0MzEyfQ.ssWavqxa6HgvCO4TMabuBOBdj9PJ26o-eEP5mHQX62F5cIEh5_-3frVbMw8YBB-3XWz7bVeeNH02VQC6Q30FBw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/auth/logout?=",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"auth",
+												"logout"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Authorization",
+							"item": [
+								{
+									"name": "VerifyJwtToken",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzUxMiJ9.eyJ2YWxpZGF0aW9uX2tleSI6ImNhdCIsInJvbGVfbmFtZSI6ImZ1bGxfYWNjZXNzIiwicmVmcmVzaF90b2tlbiI6IjJlODNhNWRlLTk3Y2ItNDUzZi05ZjUzLTVkMTA2ZTY2MGU3MyIsInN1YiI6InIuYWJvdXppZEBnbWFpbC5jb20iLCJyb2xlX2lkIjoiZTU1OGVkNDUtYmNlYS00Yzc3LTk1MzEtZWIxMjYwNTA0MzU5IiwidXNlcl9uYW1lIjoici5hYm91emlkQGdtYWlsLmNvbSIsImxhc3RfbmFtZSI6IkFib3V6aWQiLCJwaG9uZV9udW1iZXIiOiIwNjczOTU1NzI3IiwiZXhwIjoxNjczNTQ4MDY5LCJmaXJzdF9uYW1lIjoiUmVkYSIsImlhdCI6MTY3MzU0Nzk0OX0.wD7ORmD2BbSZkF4PA9RQNF22fO4NT4wmnac_Z14bWHPrGYI6KBX6yjPQdbuFaS-j70DHeYTaIvjTo7XZSkkZFQ",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/authorization/verifyToken",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"authorization",
+												"verifyToken"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "RefreshToken",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "refreshToken",
+												"value": "fbcf325b-4ab1-4d06-8831-ef81fcb86d2a",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/authorization/refreshToken",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"authorization",
+												"refreshToken"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
